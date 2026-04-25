@@ -6,7 +6,7 @@ import { Router } from "./Componets/Router";
 function App() {
   return (
     <CartProvider>
-      <RouterProvider router={Router} /> {/* 🔥 IMPORTANT */}
+      <RouterProvider router={Router} />
     </CartProvider>
   );
 }

@@ -1,4 +1,4 @@
-import { createBrowserRouter } from "react-router-dom";
+import {createBrowserRouter} from "react-router-dom";
 
 import All from "../Pages/All";
 import Platforms from "../Pages/Platfroms";
@@ -14,38 +14,15 @@ export const router = createBrowserRouter([
     path: "/",
     element: <Layout />,
     children: [
-      {
-        index: true,
-        element: <All />,
-      },
-      {
-        path: "platforms",
-        element: <Platforms />,
-      },
-      {
-        path: "tags",
-        element: <Tags />,
-      },
-      {
-        path: "developers",
-        element: <Developers />,
-      },
-      {
-        path: "publishers",
-        element: <Publishers />,
-      },
-      {
-        path: "stores",
-        element: <Stores />,
-      },
-      {
-        path: "game/:id",
-        element: <Gamedetails />,
-      },
+      { index: true, element: <All /> },
+      { path: "platforms", element: <Platforms /> },
+      { path: "tags", element: <Tags /> },
+      { path: "developers", element: <Developers /> },
+      { path: "publishers", element: <Publishers /> },
+      { path: "stores", element: <Stores /> },
+      { path: "game/:id", element: <Gamedetails /> },
     ],
   },
-], {
-  basename: "/online-game-stores.com" 
-});
+]);
 
 export default router;
